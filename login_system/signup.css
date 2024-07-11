@@ -1,0 +1,27 @@
+body, html{
+    font-family: Helvetica, sans-serif;
+    height: 100%;
+}
+
+#wrapper{
+    display: grid;
+    place-items: center;
+    height: 95vh;          
+}
+
+#container{
+    /* 최대 사이즈를 지정, 기본 사이즈는 화면 크기의 45% */
+    width: 45vw;
+    max-width: 700px;
+    margin: auto auto;
+    padding: 40px 50px;
+
+    /* 박스 음영 생성 */
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#signup{
+    font-size: 50px;
+    font-weight: 700;
+}
