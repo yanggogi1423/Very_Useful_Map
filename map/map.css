@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+body,html{
+    height: 100%;
+}
+
+#wrapper{
+    margin:100px;
+    margin-bottom: 100px;
+    border: 10px solid gray;
+    position: relative;
+    min-height: 80%;
+    padding-bottom: 100px;
+}
+#ment{
+    text-align: center;
+    margin-top: 18%;
+}
