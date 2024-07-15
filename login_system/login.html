@@ -53,8 +53,30 @@
                 </form>
 
                 <p class="text-center text-body-secondary" id="go-signup">
+
                     Not a member yet?
-                    <a href="./signup.html"><div class="g-signin2" data-onsuccess="onSignIn"></div></a>
+                    <a href="./signup.html">join</a> 
+                    <br>
+                    or
+                    <!-- google login api -->
+                    <div class="g-signin2" data-width = "200" data-height = "32" data-longtitle = "true" data-onsuccess="onSignIn">
+                        
+                    </div>
+                    <!-- apple login api -->
+                    
+                    <div
+                    id="appleid-signin"
+                    data-mode="center-align"
+                    data-type="sign-in"
+                    data-color="black"
+                    data-border="false"
+                    data-border-radius="15"
+                    data-width="200"
+                    data-height="32"
+                    style="margin-left: 140px;"
+                    ></div>
+                    <script type="text/javascript" src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"></script>
+
                 </p>
 
             </div>
