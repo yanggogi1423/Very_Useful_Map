@@ -12,8 +12,8 @@ body, html{
 #container{
     /* 최대 사이즈를 지정, 기본 사이즈는 화면 크기의 45% */
     width: 4%;
-    max-width: 600px;
-    min-width: 600px;
+    max-width: 100%;
+    min-width: 100%;
     
     margin: auto auto;
     padding: 40px 50px;
