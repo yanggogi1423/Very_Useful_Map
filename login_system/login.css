@@ -12,8 +12,8 @@ body, html{
 #container{
     /* 최대 사이즈를 지정, 기본 사이즈는 화면 크기의 45% */
     width: 45vw;
-    max-width: 500px;
-    min-width: 500px;
+    max-width: 100%;
+    min-width: 100%;
     min-height: 500px;
     min-height: 500px;
     margin: auto auto;
@@ -39,11 +39,18 @@ body, html{
     text-decoration: none;
     font-weight: 500;
 }
-.g-signin2{
-    margin-bottom: 10px;
-    margin-left: 25%;
-    margin-right: 30%;
+.g-signin2,.g-signin{
+    width: 100%;
 }
+
+.g-signin2 > div,.g-signin>div{
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
 #appleid-signin{
-    margin-left:25%; margin-right: 30%;
+    width: 100%;
+}
+#apple-signin > div{
+    margin: 0 auto;
 }
