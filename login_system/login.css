@@ -43,7 +43,7 @@ body, html{
     width: 100%;
 }
 
-.g-signin2 > div,.g-signin>div{
+.g-signin2 > div, .g-signin>div{
     margin: 0 auto;
     margin-bottom: 10px;
 }
@@ -51,6 +51,4 @@ body, html{
 #appleid-signin{
     width: 100%;
 }
-#apple-signin > div{
-    margin: 0 auto;
-}
+
