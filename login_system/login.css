@@ -18,7 +18,6 @@ body, html{
     min-height: 500px;
     margin: auto auto;
     padding: 10px 50px ;
-
     /* 박스 음영 생성 */
     background-color: #fff;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -47,8 +46,3 @@ body, html{
     margin: 0 auto;
     margin-bottom: 10px;
 }
-
-#appleid-signin{
-    width: 100%;
-}
-
