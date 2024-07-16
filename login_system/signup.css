@@ -16,11 +16,12 @@ body, html{
     min-width: 100%;
     
     margin: auto auto;
-    padding: 40px 50px;
     /* 박스 음영 생성 */
     background-color: #fff;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px 20px;
 }
+
 
 #signup{
     font-size: 50px;
