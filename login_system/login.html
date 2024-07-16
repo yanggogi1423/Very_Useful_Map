@@ -83,9 +83,15 @@
         </div>
 
         
+        <div id="footer">
+            <script>
+                // 현재 header와 footer를 jQeury를 이용해서 불러오지만, 다른 방법을 사용해도 좋을 듯 싶어요 - 현석
+                $(function(){
+                $("#footer").load("../common/footer.html");
+                });
+            </script>
+        </div>
         
-        <p class="text-center text-body-secondary">
-            CopyRight © 2024 <a href="../aboutUs.html" style="color: black; text-decoration: none; font-weight: 700;">Very Useful Map</a>, 
-            <a href="http://www.sejong.ac.kr/" style="color: black; text-decoration: none;">Sejong University</a></p>
     </body>
+    
 </html>

@@ -27,32 +27,36 @@
             <div id="container">
                 <p id="signup">Sign Up</p>
                 <form class="row g-3 needs-validation" method="post" novalidate>
-                    <div class="mb-3">
+                    <div class="mb-1" style="width:500px;">
                         <label for="exampleInputEmail1" class="form-label">Email address</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@sejong.ac.kr" required>
                       </div>
-                      <div class="mb-3">
+                      <div class="mb-1" style="width:500px;">
                         <label for="exampleInputPassword1" class="form-label">Password</label>
                         <input type="password" class="form-control" id="exampleInputPassword1" required>
                     </div>
-
-                    <div class="col-md-4">
+                    <div class="mb-1" style="width:500px;">
+                      <label for="exampleInputPassword1" class="form-label">Double Check Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" required>
+                  </div>
+                  <div class="row">
+                    <div class="col">
                       <label for="validationCustom01" class="form-label">First name</label>
-                      <input type="text" class="form-control" id="validationCustom01" value="Hwang" required>
+                      <input type="text" class="form-control" id="validationCustom01" placeholder="홍" required>
                       <div class="valid-feedback">
                         Looks good!
                       </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col">
                       <label for="validationCustom02" class="form-label">Last name</label>
-                      <input type="text" class="form-control" id="validationCustom02" value="JD" required>
+                      <input type="text" class="form-control" id="validationCustom02" placeholder="길동" required>
                       <div class="valid-feedback">
                         Looks good!
                       </div>
                     </div>
-
-                    <div class="col-md-4">
+                  </div>
+                    <div class="col-md-5" style="width:300px;">
                       <label for="validationCustomUsername" class="form-label">Username</label>
                       <div class="input-group has-validation">
                         <span class="input-group-text" id="inputGroupPrepend">@</span>
@@ -70,12 +74,12 @@
                         <label class="btn" for="option6">Female</label>
                     </div>
 
-                    <div class="col-md-6">
-                      <label for="validationCustom03" class="form-label">University</label>
-                      <input type="text" class="form-control" id="validationCustom03" required>
-                      <div class="invalid-feedback">
-                        Please provide a valid city.
-                      </div>
+                    <div class="col-md-4" style="width:300px">
+                      <label for="inputState" class="form-label">University</label>
+                      <select id="inputState" class="form-select">
+                        <option selected>Choose...</option>
+                        <option>Sejong University</option>
+                      </select>
                     </div>
                     
                     <div class="col-12">
@@ -97,8 +101,13 @@
             </div>
         </div>
         
-        <p class="text-center text-body-secondary">
-            CopyRight © 2024 <a href="../aboutUs.html" style="color: black; text-decoration: none; font-weight: 700;">Very Useful Map</a>, 
-            <a href="http://www.sejong.ac.kr/" style="color: black; text-decoration: none;">Sejong University</a></p>
+        <div id="footer">
+          <script>
+              // 현재 header와 footer를 jQeury를 이용해서 불러오지만, 다른 방법을 사용해도 좋을 듯 싶어요 - 현석
+              $(function(){
+              $("#footer").load("../common/footer.html");
+              });
+          </script>
+      </div>
     </body>
 </html>
