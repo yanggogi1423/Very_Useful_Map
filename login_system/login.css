@@ -12,15 +12,25 @@ body, html{
 #container{
     /* 최대 사이즈를 지정, 기본 사이즈는 화면 크기의 45% */
     width: 45vw;
-    max-width: 100%;
-    min-width: 100%;
-    min-height: 500px;
-    min-height: 500px;
+
     margin: auto auto;
-    padding: 10px 50px ;
+    padding: 50px 50px ;
     /* 박스 음영 생성 */
     background-color: #fff;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 769px){
+    #container{
+        /* 최대 사이즈를 지정, 기본 사이즈는 화면 크기의 45% */
+        width: 95vw;
+    
+        margin: auto auto;
+        padding: 40px 40px ;
+        /* 박스 음영 생성 */
+        background-color: #fff;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
 }
 
 #login{
