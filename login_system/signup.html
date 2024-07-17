@@ -29,7 +29,7 @@
             <div id="container">
                 <p id="signup">Sign Up</p>
 
-                <form id="sign-up" class="row g-3 needs-validation" method="post">
+                <form id="sign-up" class="row g-3 needs-validation" action="">
                     <div class="mb-1" style="width:500px;">
                         <label for="email" class="form-label">Email address</label>
                         <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="example@sejong.ac.kr" required>
@@ -71,9 +71,9 @@
                     </div>
 
                     <div class="form-check form-check-inline">
-                        <input type="radio" class="btn-check" name="options-base" id="male" autocomplete="off" checked>
+                        <input type="radio" class="btn-check" name="gender" id="male" value="male" autocomplete="off" checked>
                         <label class="btn" for="male">Male</label>
-                        <input type="radio" class="btn-check" name="options-base" id="female" autocomplete="off">
+                        <input type="radio" class="btn-check" name="gender" id="female" value="female" autocomplete="off">
                         <label class="btn" for="female">Female</label>
                     </div>
 
@@ -98,17 +98,28 @@
                     </div>
 
                     <div class="col-12">
-                      <button class="btn btn-primary" type="submit" onclick="signUpSys(this)">Submit</button>
+                      <button class="btn btn-primary" type="submit" onclick="signUpSys(this.form)">Submit</button>
                     </div>
                   </form>
             </div>
         </div>
 
         <script>
-          function signUpSys(check){
-            console.dir(check);
+          function signUpSys(form){
 
-            return false;
+            var email = form["email"].value;
+
+            var pw1 = form["password"].value;
+            var pw2 = form["password2"].value;
+
+            var lastname = form["lastname"].value;
+            var firstname = form["firstname"].value;
+
+            var username = form["username"].value;
+            var gender = form["gender"].value;
+
+            var univ = form["univ"].value;
+            
           }
         </script>
         
